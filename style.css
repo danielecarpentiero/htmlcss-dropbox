@@ -1,6 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+/* RULES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
+
+.button-type1 {
+  background-color: #0061ff;
+  color: white;
+  padding: 10px 15px;
+}
+
+li {
+  list-style-type: none;
+}
+/* RULES */
+
+/* Header */
+/* navigation bar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 80px;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+/* /navigation bar */
+/* /header */
