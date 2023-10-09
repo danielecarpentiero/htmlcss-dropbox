@@ -19,18 +19,38 @@ li {
 }
 header {
   background-color: #b4d0e7;
+  position: relative;
 }
-.header-jumbotron {
-  margin: 0 auto;
-  width: 1200px;
+.header-jumbotron,
+section {
+  margin: 50px auto;
 }
 header ul,
 header nav,
-.bottom {
+.bottom,
+.input,
+.container {
   display: flex;
 }
-.header-jumbotron .bottom .right img {
-  width: 100%;
+
+h1,
+p,
+.left .button-type1,
+h2,
+.input {
+  margin-bottom: 40px;
+}
+
+header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+}
+
+h2 {
+  font-size: 40px;
 }
 
 /* RULES */
@@ -40,7 +60,8 @@ header nav,
 /* navigation bar */
 
 header ul,
-header nav {
+header nav,
+.input {
   align-items: center;
 }
 
@@ -55,18 +76,52 @@ ul {
   gap: 40px;
 }
 /* /navigation bar */
-/* Header body */
+/* Header jumbotron */
 .header-jumbotron {
-  padding-top: 70px;
+  max-height: 750px;
+  padding-top: 100px;
+  width: 1000px;
 }
 
 .header-jumbotron .top h1 {
-  font-size: 80px;
+  font-size: 70px;
 }
 
-.header-jumbotron .bottom .left {
-  max-width: 350px;
+.header-jumbotron .bottom .right img {
+  width: 300%;
 }
 
-/* /header body */
+.bottom {
+  width: 600px;
+}
+
+#arrowDown {
+  position: absolute;
+  bottom: 20px;
+  width: 730px;
+  font-size: 60px;
+}
+
+/* /header jumbotron */
 /* /header */
+
+/* Body */
+/* First section */
+section {
+  padding: 160px 0;
+  width: 1000px;
+}
+
+.input {
+  max-width: 400px;
+  justify-content: space-between;
+}
+
+.container {
+  gap: 50px;
+  flex-wrap: wrap;
+  width: calc((100% - 100px) / 3);
+}
+
+/* /First section */
+/* /body */
