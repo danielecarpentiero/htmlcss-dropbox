@@ -11,27 +11,62 @@
   background-color: #0061ff;
   color: white;
   padding: 10px 15px;
+  max-width: 230px;
 }
 
 li {
   list-style-type: none;
 }
+header {
+  background-color: #b4d0e7;
+}
+.header-jumbotron {
+  margin: 0 auto;
+  width: 1200px;
+}
+header ul,
+header nav,
+.bottom {
+  display: flex;
+}
+.header-jumbotron .bottom .right img {
+  width: 100%;
+}
+
 /* RULES */
 
 /* Header */
+
 /* navigation bar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  height: 80px;
+
+header ul,
+header nav {
   align-items: center;
 }
 
+header nav {
+  justify-content: space-between;
+  padding: 20px;
+  height: 80px;
+  background-color: white;
+}
+
 ul {
-  display: flex;
   gap: 40px;
-  align-items: center;
 }
 /* /navigation bar */
+/* Header body */
+.header-jumbotron {
+  padding-top: 70px;
+}
+
+.header-jumbotron .top h1 {
+  font-size: 80px;
+}
+
+.header-jumbotron .bottom .left {
+  max-width: 350px;
+}
+
+/* /header body */
 /* /header */
