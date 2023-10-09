@@ -10,8 +10,9 @@
 .button-type1 {
   background-color: #0061ff;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 15px;
   max-width: 230px;
+  line-height: 30px;
 }
 
 li {
@@ -36,9 +37,13 @@ header nav,
 h1,
 p,
 .left .button-type1,
+.product-desc .button-type1 {
+  margin-bottom: 40px;
+}
+
 h2,
 .input {
-  margin-bottom: 40px;
+  margin-bottom: 70px;
 }
 
 header nav {
@@ -80,7 +85,7 @@ ul {
 .header-jumbotron {
   max-height: 750px;
   padding-top: 100px;
-  width: 1000px;
+  width: 1200px;
 }
 
 .header-jumbotron .top h1 {
@@ -120,8 +125,73 @@ section {
 .container {
   gap: 50px;
   flex-wrap: wrap;
+}
+
+.box {
+  border: 2px solid #cbcecf;
   width: calc((100% - 100px) / 3);
 }
 
+.user-info {
+  border-bottom: 2px solid #cbcecf;
+  padding: 2px;
+  text-align: center;
+  /* margin-bottom: 20px; */
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+.product-info {
+  padding: 30px;
+}
+
+.product-info div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-info,
+.product-desc,
+.product-highlights {
+  line-height: 50px;
+}
+
+.product-desc,
+.product-highlights {
+  padding: 0 30px;
+}
+
+#share,
+.product-highlights ul li {
+  line-height: 22px;
+  margin-bottom: 40px;
+}
+
+hr {
+  width: 50px;
+  margin-top: 30px;
+}
+
+.product-highlights {
+  margin-top: 20px;
+  margin-bottom: 200px;
+}
+
+.product-highlights h4 {
+  margin-bottom: 30px;
+}
+
+.box:last-of-type {
+  flex-direction: row;
+  height: 250px;
+  width: 1000px;
+}
 /* /First section */
 /* /body */
