@@ -15,6 +15,13 @@
   line-height: 30px;
 }
 
+.button-type2 {
+  border: 2px solid black;
+  padding: 10px;
+  line-height: 20px;
+  width: 50%;
+}
+
 li {
   list-style-type: none;
 }
@@ -30,7 +37,8 @@ header ul,
 header nav,
 .bottom,
 .input,
-.container {
+.container,
+.partners {
   display: flex;
 }
 
@@ -56,6 +64,10 @@ header nav {
 
 h2 {
   font-size: 40px;
+}
+
+section {
+  width: 1000px;
 }
 
 /* RULES */
@@ -112,9 +124,8 @@ ul {
 
 /* Body */
 /* First section */
-section {
-  padding: 160px 0;
-  width: 1000px;
+section:first-of-type {
+  padding-top: 200px;
 }
 
 .input {
@@ -140,7 +151,7 @@ section {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h5 {
@@ -188,10 +199,53 @@ hr {
   margin-bottom: 30px;
 }
 
-.box:last-of-type {
+section:first-of-type .box:last-of-type {
   flex-direction: row;
   height: 250px;
   width: 1000px;
 }
+
 /* /First section */
+/* Second section */
+section:nth-of-type(2) {
+  padding: 100px 0;
+}
+
+section .partners .left img {
+  display: inline-block;
+  height: 510px;
+}
+
+section .right {
+  padding: 50px;
+}
+
+section .right p {
+  padding: 20px 0;
+}
+/* /second section */
+
+/* turd section */
+.box .top img {
+  height: 220px;
+}
+
+.box .bottom {
+  flex-direction: column;
+  width: 100%;
+}
+
+.bottom p,
+.box .bottom {
+  margin: 20px 0;
+}
+
+section:nth-of-type(3) .box {
+  border: none;
+}
+/* /turd section */
+#ad {
+  padding-top: 100px;
+  width: 75%;
+}
 /* /body */
