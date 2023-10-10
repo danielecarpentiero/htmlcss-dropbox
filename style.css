@@ -11,7 +11,7 @@
   background-color: #0061ff;
   color: white;
   padding: 5px 15px;
-  max-width: 230px;
+  text-align: center;
   line-height: 30px;
 }
 
@@ -38,15 +38,21 @@ header nav,
 .bottom,
 .input,
 .container,
-.partners {
+.partners,
+.logo-container,
+.logo-bigBoxes:nth-of-type(odd),
+.logo-littleBoxes {
   display: flex;
 }
 
 h1,
 p,
-.left .button-type1,
 .product-desc .button-type1 {
   margin-bottom: 40px;
+}
+
+.left .button-type1 {
+  margin: 40px 0;
 }
 
 h2,
@@ -194,7 +200,7 @@ hr {
 }
 
 .product-highlights h4 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 section:first-of-type .box:last-of-type {
@@ -221,7 +227,7 @@ section .right p {
 
 /* turd section */
 .box .top img {
-  height: 220px;
+  width: 100%;
 }
 
 .box .bottom {
@@ -237,9 +243,78 @@ section .right p {
 section:nth-of-type(3) .box {
   border: none;
 }
+
+section:nth-of-type(4) {
+  padding-top: 80px;
+}
+
 /* /turd section */
 #ad {
   padding-top: 100px;
   width: 75%;
 }
+/* sponsors */
+.logo-container {
+  margin-top: 150px;
+  background-color: white;
+}
+
+.logo-bigBoxes {
+  width: calc(100% / 3);
+}
+
+.logo-bigBoxes:nth-of-type(2) {
+  padding: 50px;
+  background-color: #f5f5f5;
+}
+
+.logo-bigBoxes img {
+  width: 50%;
+}
+
+.logo-littleBoxes:first-of-type div {
+  display: flex;
+  width: 90%;
+  background-color: #a2d39b;
+  height: 90%;
+  justify-content: center;
+}
+
+.logo-littleBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% / 2);
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-bigBoxes hr {
+  width: 20%;
+  margin: 40px 0;
+}
+
+#leadName {
+  padding-top: 30px;
+  margin-bottom: 40%;
+}
+
+.logo-bigBoxes:nth-of-type(odd) {
+  flex-wrap: wrap;
+}
+
+#one {
+  background-color: #d1e9cd;
+}
+
+#two {
+  background-color: #61082b;
+}
+
+#three {
+  background-color: #0093ce;
+}
+
+#four {
+}
+/* /sponsors */
 /* /body */
