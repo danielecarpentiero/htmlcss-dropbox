@@ -18,8 +18,14 @@
 .button-type2 {
   border: 2px solid black;
   padding: 10px;
-  line-height: 20px;
-  width: 50%;
+  text-align: center;
+}
+
+.button-type3 {
+  background-color: white;
+  padding: 10px;
+  width: 300px;
+  text-align: center;
 }
 
 li {
@@ -41,7 +47,8 @@ header nav,
 .partners,
 .logo-container,
 .logo-bigBoxes:nth-of-type(odd),
-.logo-littleBoxes {
+.logo-littleBoxes,
+.free-trial section {
   display: flex;
 }
 
@@ -73,7 +80,7 @@ h2 {
 }
 
 section {
-  width: 1000px;
+  width: 1200px;
 }
 
 /* RULES */
@@ -213,11 +220,12 @@ section:first-of-type .box:last-of-type {
 
 section .partners .left img {
   display: inline-block;
-  height: 510px;
+  width: 100%;
 }
 
 section .right {
   padding: 50px;
+  width: 50%;
 }
 
 section .right p {
@@ -330,6 +338,22 @@ section:nth-of-type(4) {
 
 #eight {
   background-color: #ffd830;
+}
+
+.free-trial {
+  background-color: #b4d0e7;
+  padding-bottom: 70px;
+}
+
+.free-trial section {
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 140px;
+}
+
+.free-trial section h2 {
+  color: #61082b;
+  padding: 0 100px;
 }
 /* /sponsors */
 /* /body */
