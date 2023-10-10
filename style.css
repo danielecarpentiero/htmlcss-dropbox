@@ -260,7 +260,7 @@ section:nth-of-type(4) {
 }
 
 .logo-bigBoxes {
-  width: calc(100% / 3);
+  width: calc(100% / 2);
 }
 
 .logo-bigBoxes:nth-of-type(2) {
@@ -281,8 +281,6 @@ section:nth-of-type(4) {
 }
 
 .logo-littleBoxes {
-  display: flex;
-  flex-wrap: wrap;
   width: calc(100% / 2);
   justify-content: center;
   align-items: center;
@@ -315,6 +313,23 @@ section:nth-of-type(4) {
 }
 
 #four {
+  background-color: #ff1c1c;
+}
+
+#five {
+  background-color: #d5001f;
+}
+
+#six {
+  background-color: #b4d0e7;
+}
+
+#seven {
+  background-color: #0d2481;
+}
+
+#eight {
+  background-color: #ffd830;
 }
 /* /sponsors */
 /* /body */
