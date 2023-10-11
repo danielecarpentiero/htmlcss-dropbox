@@ -126,7 +126,8 @@ ul {
 .button-type3,
 nav ul,
 #first ul li,
-.fa-solid.fa-caret-up {
+.fa-solid.fa-caret-up,
+.fa-solid.fa-chevron-down {
   cursor: pointer;
 }
 
