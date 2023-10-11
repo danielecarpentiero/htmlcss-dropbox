@@ -7,6 +7,13 @@
   font-family: "Open Sans", sans-serif;
 }
 
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+}
+
 .button-type1 {
   background-color: #0061ff;
   color: white;
@@ -96,17 +103,47 @@ header ul,
 header nav,
 .input {
   align-items: center;
+  padding: 0 10px;
 }
 
 header nav {
   justify-content: space-between;
-  padding: 20px;
+  line-height: 80px;
   background-color: white;
+}
+
+header ul li:hover {
+  border-bottom: 2px solid black;
+  max-height: 80px;
 }
 
 ul {
   gap: 40px;
 }
+
+.button-type1,
+.button-type2,
+.button-type3,
+nav ul,
+#first ul li,
+.fa-solid.fa-caret-up {
+  cursor: pointer;
+}
+
+.button-type1:hover,
+.button-type2:hover,
+.button-type3:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.button-type1:active,
+.button-type2:active,
+.button-type3:active {
+  opacity: 0.9;
+  transition: 0.2s;
+}
+
 /* /navigation bar */
 /* Header jumbotron */
 .header-jumbotron {
