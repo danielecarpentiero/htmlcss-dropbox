@@ -225,7 +225,7 @@ hr {
 
 section:first-of-type .box:last-of-type {
   flex-direction: row;
-  width: 1000px;
+  width: 1200px;
 }
 
 /* /First section */
